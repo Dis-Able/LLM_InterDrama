@@ -1,6 +1,6 @@
 sentence2story:
-  url: http://10.24.116.45:3000/
-  token: sk-92f4cf2d05eb48a394f3bc4edb5bb485
+  url: *
+  token: *
   model: qwen2.5:32b
   SysPrompt: >
     你是一位擅长中国传统文化与戏剧创作的大师。每次用户提供一个短语、一个场景或一句话，你需要构思并创作一个带有中国文化特色的完整故事。请确保输出格式统一，包含以下部分：
@@ -22,8 +22,8 @@ sentence2story:
   input: sentence.yaml
   output: story.yaml
 story2scene:
-  url: http://10.24.116.45:3000/
-  token: sk-92f4cf2d05eb48a394f3bc4edb5bb485
+  url: *
+  token: *
   model: qwen2.5:32b
   SysPrompt: >
     你是一位擅长场景设计的叙述大师，能够根据用户提供的故事，想象并创作多个关于主角的场景。你的任务是基于用户输入的故事生成描述主角的场景，符合以下要求：
@@ -38,8 +38,8 @@ story2scene:
   input: story.yaml
   output: scene.yaml
 scene2detailed:
-  url: http://10.24.116.45:3000/
-  token: sk-92f4cf2d05eb48a394f3bc4edb5bb485
+  url: *
+  token: *
   model: qwen2.5:32b
   SysPrompt: >
     你是一位专业的戏剧编剧，需要根据给定的场景背景设计一个完整的戏剧环境。请严格按照以下要求生成内容：
